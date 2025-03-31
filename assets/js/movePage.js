@@ -1,3 +1,9 @@
-function movePage(n){
-    window.location.href = `./public/${n}.html`;
+function movePage(n, v){
+    if (v) {
+        v = "answer";
+    }
+    else {
+        v = "question";
+    }
+    window.location.href = `./public/${v}/${n}.html`;
 }
